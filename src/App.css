@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body,html{
+  height:100%;
+  margin:0;
+  background: #C7F7FF;
+}
+
+.App {
+  position:absolute;
+  height:90%;
+  width:100%;
+  display:table;
+}
+
+.middle{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner{
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.titleBar{
+  box-sizing: border-box;
+  border:2px solid #252525;
+  height:30px;
+  width:100%;
+  background-color:#82C1E1;
+  position:relative;
+  font-family: "Russo One";
+  font-weight: bold;
+}
+
+.titleBar p{
+  width:80%;
+  display:inline;
+}
+
+.editicon{
+  height:25px;
+  width:25px;
+  position:absolute;
+  left:2px;
+  top:2px;
+}
+
+.expend{
+  position:relative;
+  top:1px;
+  right:4px;
+  height:26px;
+  width:26px;
+  float:right;
+}
+
+.expend:hover{
+  fill:red;
+  transform:scaleX(1.1) scaleY(1.1);
+}
+
+.editorWrapper img{
+  height:23px;
+  width:23px;
+}
+
+.titleBar p{
+  margin:0;
+  margin-left:3%;
+  line-height:1.7em;
+  position:relative;
+  left:15px;
+}
+
+.editorWrapper{
+  height:350px;
+  width:650px;
+  padding:0;
+  margin:auto;
+}
+
+
+.editorWrapper textarea{
+  box-sizing: border-box;
+  border: solid 2px black;
+  border-top:none;
+  height:100%;
+  width:100%;
+  background-color:#CBE0EB;
+  outline:none;
+  resize:none;
+  color:green;
+  font-family: "Orbitron","sans-serif";
+  text-decoration:none;
+  font-size: 18px;
+  padding: 10px;
+  color: #525252;
+}
+
+.previewerWrapper{
+  box-sizing: border-box;
+  width : 850px;
+  height:400px;
+  min-height:400px;
+  max-height:600px;
+  margin:auto;
+  margin-top:50px;
+  font-size:18px;
+}
+
+.previewerWrapper .body{
+  text-align:left;
+  height:100%;
+  padding:10px;
+  border:2px solid black;
+  border-top:none;
+  overflow: auto;
+  background-color:#CBDEEB;
+  color:#525252;
+  font-family:"liberation mono",monospace;
+}
+
+.editorWrapper.max{
+  position:absolute;
+  width:95%;
+  height:100%;
+  top:50%;
+  left:50%;
+  transform : translateX(-50%) translateY(-45%);
+}
+
+.previewerWrapper.max{
+  position:absolute;
+  top:50%;
+  left:50%;
+  height:100%;
+  width:90%;
+  transform : translateX(-50%) translateY(-50%);
+
+}
+
+.previewerWrapper code{
+  background-color:white;
+  padding: 2px 5px 0px 5px;
+}
+
+.previewerWrapper pre{
+  background:white;
+  padding: 2px 5px 3px 5px;
+}
+
+.previewerWrapper .body, .titleBar, .editorWrapper textarea{
+  box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+}
+
+.nullClass{
+  display:none;
+}
